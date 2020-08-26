@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="FinalUWPMihirPatel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalUWPMihirPatel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontSize="20">
+
+    <Grid Background="#FF27F4F7">
+        <TextBlock HorizontalAlignment="Center" Margin="5,50,0,0" Text="Temperature Conversion" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="36" FontWeight="Normal" Foreground="#FFD64444"/>
+        <Image Source="Assets/Temperature-Extremes.png" HorizontalAlignment="Left" Height="343" Margin="512,132,0,0" VerticalAlignment="Top" Width="480"/>
+        <RadioButton x:Name="Radiobtn1" Content="Celsius to Fahrenheit" Margin="512,437,0,0" VerticalAlignment="Top" Height="62" Width="441" FontSize="30" FontFamily="Times New Roman"/>
+        <RadioButton x:Name="Radiobtn2" Content="Fahrenheit to Celsius" Margin="512,504,0,0" VerticalAlignment="Top" Height="62" Width="441" FontSize="30" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Margin="475,585,0,0" Text="Enter Temperature:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FontFamily="Times New Roman"/>
+        <TextBox x:Name="tb" HorizontalAlignment="Left" Margin="733,584,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Height="35" Width="198" SelectionHighlightColorWhenNotFocused="{x:Null}" Background="White" BorderBrush="Black" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}" SelectionHighlightColor="{x:Null}"/>
+        <Button Content="Convert" Margin="967,577,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Times New Roman" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="476,682,0,0" Text="Conversion Result:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FontFamily="Times New Roman"/>
+        <TextBlock x:Name="TextOutput" HorizontalAlignment="Left" Margin="733,683,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="199" FocusVisualPrimaryBrush="{x:Null}" FontFamily="Times New Roman" FontSize="30"/>
+    </Grid>
+</Page>
